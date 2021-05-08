@@ -15,24 +15,31 @@ export const getFormModel = () => {
 export const getFormSchema = () => {
   return [
     {
-      title: 'Test Form Title',
+      title: '项目概况',
       schemaChildren: [
         {
-          label: '输入框',
+          label: '项目名称',
           type: 'text',
           field: 'input',
-          span: 12,
+          span: 10,
           props: { disabled: false, readonly: false, placeholder: 'write your text...' }
         },
         {
-          label: '数字输入框',
+          label: '项目类型',
           type: 'text',
           field: 'input2',
-          span: 12,
+          span: 7,
           props: { disabled: false, readonly: false, placeholder: 'write your text...' }
         },
         {
-          label: '多行输入',
+          label: '工程类型',
+          type: 'text',
+          field: 'input2',
+          span: 7,
+          props: { disabled: false, readonly: false, placeholder: 'write your text...' }
+        },
+        {
+          label: '项目级别',
           type: 'text',
           field: 'input3',
           span: 24,
@@ -45,7 +52,7 @@ export const getFormSchema = () => {
           }
         },
         {
-          label: '数字输入',
+          label: '占用永久基本农田',
           type: 'number',
           field: 'input4',
           span: 8,
@@ -56,7 +63,7 @@ export const getFormSchema = () => {
           }
         },
         {
-          label: '多选框',
+          label: '项目位置土地利用现状图幅号',
           type: 'check',
           field: 'check',
           span: 8,
